@@ -8,7 +8,7 @@ namespace MaximumNoProgramUsingGenerics
     {
         public static void compareNo()
         {
-            int x = 18, y = 15, z = 12;
+            double x = 34.3, y = 45.8, z = 42.5;
 
             if (x.CompareTo(y) > 0 && x.CompareTo(z) > 0 || x.CompareTo(y) >= 0 && x.CompareTo(z) > 0 || x.CompareTo(y) > 0 && x.CompareTo(z) > 0)
             {
