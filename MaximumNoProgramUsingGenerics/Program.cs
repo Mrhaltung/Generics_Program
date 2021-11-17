@@ -8,10 +8,11 @@ namespace MaximumNoProgramUsingGenerics
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("3 Floats where given and will be compared with each other to show the Maximum Number.");
-            Console.WriteLine("First Number = 34.3, Second Number = 45.8, Third Number = 42.5");
+            Console.WriteLine("3 String where given and will be compared with each other to show the Maximum Number.");
+            Console.WriteLine("First String = F, Second String = K, Third String = Y");
             Console.WriteLine("-------------------------------------------------------------------------------------------");
             CompareNo.compareNo();
+            
         }
     }
 }
