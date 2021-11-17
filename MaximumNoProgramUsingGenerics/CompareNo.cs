@@ -4,15 +4,18 @@ using System.Text;
 
 namespace MaximumNoProgramUsingGenerics
 {
-    public class CompareNo
+    public class CompareNo<T> where T : IComparable
     {
-        public static void compareNo()
+        public T x, y, z;
+        public CompareNo(T x, T y, T z)
         {
-            string x, y, z;
-            x = "F";
-            y = "K";
-            z = "Y";
+            this.x = x;
+            this.y = y;
+            this.z = z;
+        }
 
+        internal void testMax(T x, T y, T z)
+        { 
             if (x.CompareTo(y) > 0 && x.CompareTo(z) > 0 || x.CompareTo(y) >= 0 && x.CompareTo(z) > 0 || x.CompareTo(y) > 0 && x.CompareTo(z) > 0)
             {
                 Console.WriteLine(x + " Greater than " + y + " and " + z);
